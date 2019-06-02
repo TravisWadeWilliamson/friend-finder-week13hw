@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/5b1de52a68.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    div.center {
+      align-content: center
+    }
+
+    .text-center {
+      border-radius: 10px;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+      margin-top: 1.5rem;
+    }
+
+    .btn {
+      margin-top: -2.5rem;
+    }
+
+    .cool-link {
+      margin-top: -5px;
+      text-decoration: none !important;
+      color: rgb(233, 72, 99);
+      font-size: 1.2rem;
+      font-weight: bold;
+      position: relative;
+
+    }
+
+    .cool-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in;
+      }
+
+    .cool-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  </style>
+  <title>Home Page</title>
+
+
+
+</head>
+
+<body style="background-image: url(/images/floatinghearts.jpg); background-repeat: repeat">
+
+  <div class="container">
+
+    <div class="jumbotron" style="background-color: rgb(248, 167, 181)">
+      <h1 class="text-center" style="background-color: rgb(233, 72, 99); color: #fff"><span
+          class="far fa-kiss-wink-heart"></span> Match Finder<span class="far fa-kiss-wink-heart fa-flip-horizontal"
+          style="margin-left: .7rem"></span></h1>
+
+      <h2 class="text-center" style="background-color: rgb(250, 115, 137); color: #fff">Take the survey new to find your
+        perfect match!</h2>
+      <br>
+
+      <div class="text-center">
+        <a href="/survey"><button class="btn btn-lg btn-danger"></span> Survey</button></a>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <a class="cool-link" href="/survey">API Survey </a>
+      </div>
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>

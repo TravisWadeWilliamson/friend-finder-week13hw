@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: rgb(248, 167, 181);
+        }
+
+        h1 {
+            color: rgb(65, 62, 62);
+            border: 4px solid  rgb(65, 62, 62);
+            border-radius: 20px;
+            background-color: rgb(248, 167, 181)
+        }
+
+        label {
+            color: rgb(65, 62, 62);
+            font-size: 1.3rem;
+            font-weight: bolder;
+        }
+
+        option {
+            color: rgb(65, 62, 62);
+            
+        }
+    </style>
+    <title>Survey</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="mt-5 text-center pt-3 pb-3">Take the Survey</h1>
+        <br>
+
+        <form method="POST" action="/api/friends">
+            <!-- name input -->
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" required>
+
+            <!-- photo input -->
+            <label for="photo">Photo</label>
+            <input type="url" name="photo" class="form-control" required>
+
+            <!-- question 1 -->
+            <label class="my-1 mr-2" for="survey_Q1">1. You would rather stay in and watch a movie with a friend than go
+                to a party.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q1" id="survey_Q1">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 2 -->
+            <label class="my-1 mr-2" for="survey_Q2">2. Your idea of a perfect day would be skydiving.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q2" id="survey_Q2">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 3 -->
+            <label class="my-1 mr-2" for="survey_Q3">3. Your spirit animal is a ring-tailed lemur.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q3" id="survey_Q3">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 4 -->
+            <label class="my-1 mr-2" for="survey_Q4">4. Family is the most important thing to you.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q4" id="survey_Q4">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 5 -->
+            <label class="my-1 mr-2" for="survey_Q5">5. You could put coconut on anything.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q5" id="survey_Q5">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 6 -->
+            <label class="my-1 mr-2" for="survey_Q6">6. You are the person everyone wants to come to their
+                party.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q6" id="survey_Q6">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 7 -->
+            <label class="my-1 mr-2" for="survey_Q7">7. Your idea of a good afternoon would be writing a dating app
+                using
+                JavaScript.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q7" id="survey_Q7">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 8 -->
+            <label class="my-1 mr-2" for="survey_Q8">8. You'd rather avoid an argument at the cost of your
+                feelings.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q8" id="survey_Q8">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 9 -->
+            <label class="my-1 mr-2" for="survey_Q9">9. Your next vacation will be at a WWOOF.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q9" id="survey_Q9">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+
+            <!-- question 10 -->
+            <label class="my-1 mr-2" for="survey_Q10">10. You expect to go dutch on all your potential dates.</label>
+            <select class="custom-select my-1 mr-sm-2" name="survey_Q10" id="survey_Q10">
+                <option selected="1">1 (Strongly Disagree) </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree) </option>
+            </select>
+            <div class="text-center">
+                <button id="submit-btn" class="btn btn-large btn-danger mb-5 mt-3 center" style="color: #fff">Find
+                    Match</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+        integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
